@@ -14,9 +14,7 @@ class DacBank{
     public:
     Database db;
 
-       searchResults.clear();
-
-    void renderIemPage(){
+           void renderDacPage(){
         ImGui::Text("WELCOME TO THE DAC SECTION");
         ImGui::Separator();
         ImGui::Text("WHAT DAC WOULD YOU LIKE TO SEARCH FOR TODAY");
@@ -31,7 +29,7 @@ class DacBank{
                 ImGui::Text("LAST SEARCH RESULTS (%d) ",(int)searchResults.size());
                 int id = 0;
                 for(const auto& dac : searchResults){
-                    ImGui::PushID(id++){
+                    ImGui::PushID(id++);
                         if(ImGui::Selectable(dac.c_str())){
                             std::cout<<"SELECTED"<<std::endl;
                         }
@@ -52,7 +50,7 @@ class DacBank{
                 }
 
 
-            }
+            
             
         }
 

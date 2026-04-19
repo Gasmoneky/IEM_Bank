@@ -16,6 +16,7 @@ private:
     
 
     IemBank myIemBank;
+    DacBank myDacBank;
 
      public:
     void RenderTheUi() {
@@ -38,6 +39,7 @@ private:
         
         if (myChoice == DacPage) {
             ImGui::Text("WELCOME TO THE AMAZING WORLD OF DACS");
+            myDacBank.renderDacPage();
         }
     }
 };

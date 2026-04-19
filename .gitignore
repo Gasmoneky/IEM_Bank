@@ -7,3 +7,13 @@ cmake_install.cmake
 *.out
 .vscode/
 *.db
+# Ignore the library source code
+third_party/imgui/
+third_party/glfw/
+third_party/glfw/g
+# Catch the hidden CMake metadata
+.cmake/
+
+# Also catch any ninja or build logs that might escape
+.ninja_deps
+.ninja_log

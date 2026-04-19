@@ -8,8 +8,6 @@ class IemBank {
 private:
     std::vector<std::string> IemName;
     char iemdbName[128]{};
-
-
     std::vector<std::string> searchResults;
 
 public:
